@@ -5,11 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     var ripple = document.getElementById('ripple');
     var litecoin = document.getElementById('litecoin');
     var json = JSON.parse(resp);
-    bitcoin.innerText = json.prices.BTC;
-    ether.innerText = json.prices.ETH;
-    ripple.innerText = json.prices.XRP;
-    litecoin.innerText = json.prices.LTC;
-
+    bitcoin.innerText = json.stats.BTC.last_traded_price;
+    ether.innerText = json.stats.ETH.last_traded_price;
+    ripple.innerText = json.stats.XRP.last_traded_price;
+    litecoin.innerText = json.stats.LTC.last_traded_price;
   });
 }, false);
 
