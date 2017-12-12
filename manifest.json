@@ -1,0 +1,11 @@
+{
+  "name": "Koinex",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Extension to retrieve price from Koinex and display to user",
+  "browser_action": {
+    "default_icon": "download.png",
+    "default_popup":"popup.html",
+    "default_title":"Let's find out price of Crypto!"
+  }
+}
